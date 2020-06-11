@@ -1,43 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- font awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
     <!-- font awesome -->
 
     <!-- boostrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!--boostrap -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
 
-    <p>Hello world</p>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Neoverse Luxury Suites</title>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="container">
+            <!-- Nav bar -->
 
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="#">
+                <img src="./src/images/Logo.png" width="200px" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Accomodation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="rooms.html">Rooms and Rates</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
 
+            <!-- End Nav bar -->
 
+            <!-- Info Section -->
+            <div class="hero-section">
+              <div class="container">
+                <div class="col-md-10">
+                  <h1>Luxury of the future brought to you today</h1>
+                  <p>
+                    Super Luxirious hotels, 5 start rating and living like the
+                    king in you. We offer different classes of rooms and pools
+                    known to be standard all through the world. All at a better
+                    deal.
+                  </p>
+                  <a href="#" class="btn btn-outline-primary orange-border mt-8"
+                    >Explore</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- End Info Section -->
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="book-space">
+            <div class="content">
+              <h1>Start booking your Space</h1>
+              <h6>Make a reservation for a space</h6>
 
+              <form>
+                <div class="form-group mb-3">
+                  <label class="control-label" for="email">
+                    Place
+                  </label>
+                  <div class="inner-addon left-addon">
+                    <i
+                      class="fas icon fa-map-marker-alt fa-lg fa-fw"
+                      arial-hidden="true"
+                    ></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Lagos"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 col-sm-12 mt-8 mb-8">
+                    <label class="control-label" for="email">
+                      Check in
+                    </label>
+                    <div class="inner-addon">
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="dd/mm/yy"
+                      />
+                      <!-- <i class="far fa-calendar icon fa-lg fa-fw"></i> -->
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                    <label class="control-label" for="email">
+                      Check out
+                    </label>
+                    <div class="inner-addon">
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="dd/mm/yy"
+                      />
+                      <!-- <i class="far fa-calendar icon fa-lg fa-fw"></i> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-sm-4">
+                  <label class="control-label" for="email">
+                    Guest
+                  </label>
+                  <div class="inner-addon left-addon">
+                    <select id="inputState" class="form-control">
+                      <option selected>How many Guest? </option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg btn-block mt-sm-5"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rooms listing section -->
+
+    <section class="listing">
+      <div class="container">
+        <div class="jumbotron text-center">
+          <h2 class="proom">Choose the perfect Room for your needs</h2>
+          <p style="margin-top: 16px;">
+            Make a reservation for a space and find out the rate at which our
+            Luxury suites go far. Luxury suites comes with <br />a partche, and
+            a lorraigne angular spa treatment with the right view.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img
+              class="img-list"
+              width="100"
+              height="250"
+              src="./src/images/Living.png"
+            />
+            <div class="room">
+              <p class="htext">Luxury villa With Pool</p>
+              <p class="price">N500,000</p>
+              <p class="suite">Suite S6</p>
+              <span>
+                <img src="./src/images/bed-icon.svg"  alt="bed"> 4 Beds
+                <img src="./src/images/Bath.svg" alt=""> 2 Bath
+                <img src="./src/images/sqr-feets.svg" alt=""> 980 SqFt
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="img-list"
+              width="100"
+              height="250"
+              src="./src/images/Bedroom.png"
+            />
+            <div class="room">
+              <p class="htext">Pine Luxury Room</p>
+              <p class="price">N1,000,000</p>
+              <p class="suite">Deluxe Suite</p>
+              <span>
+                <img src="./src/images/bed-icon.svg"  alt="bed"> 4 Beds
+                <img src="./src/images/Bath.svg" alt=""> 2 Bath
+                <img src="./src/images/sqr-feets.svg" alt=""> 980 SqFt
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="img-list"
+              width="100"
+              height="250"
+              src="./src/images/Homepic.png"
+            />
+            <div class="room">
+              <p style="font-size: 18px; font-family: karla">Palace Luxury</p>
+              <p class="price">N450,000</p>
+              <p class="suite">Top Apartment</p>
+              <span>
+                <img src="./src/images/bed-icon.svg"  alt="bed"> 4 Beds
+                <img src="./src/images/Bath.svg" alt=""> 2 Bath
+                <img src="./src/images/sqr-feets.svg" alt=""> 980 SqFt
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img
+              class="img-list"
+              width="100"
+              height="250"
+              src="./src/images/Fitness Centre.png"
+            />
+            <div class="room">
+              <p class="htext">Luxury villa With Pool</p>
+              <p class="price">N5,000,000</p>
+              <p class="suite">Exquisite Suite</p>
+              <span>
+                <img src="./src/images/bed-icon.svg"  alt="bed"> 4 Beds
+                <img src="./src/images/Bath.svg" alt=""> 2 Bath
+                <img src="./src/images/sqr-feets.svg" alt=""> 980 SqFt
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="img-list"
+              width="100"
+              height="250"
+              src="./src/images/Lobby.png"
+            />
+            <div class="room">
+              <p class="htext">Living Space Apartment</p>
+              <p class="price">N6,500,000</p>
+              <p class="suite">Guest Lounge</p>
+              <span>
+                <img src="./src/images/bed-icon.svg"  alt="bed"> 4 Beds
+                <img src="./src/images/Bath.svg" alt=""> 2 Bath
+                <img src="./src/images/sqr-feets.svg" alt=""> 980 SqFt
+              </span>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <img
+              class="img-list"
+              width="100"
+              height="250"
+              src="./src/images/ville.png"
+            />
+            <div class="room">
+              <p class="htext">Top Villa</p>
+              <p class="price">N1,000,000</p>
+              <p class="suite">Premuim Quaters</p>
+              <span>
+                <img src="./src/images/bed-icon.svg"  alt="bed"> 4 Beds
+                <img src="./src/images/Bath.svg" alt=""> 2 Bath
+                <img src="./src/images/sqr-feets.svg" alt=""> 980 SqFt
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="al-btn">
+          <button type="login">VIEW MORE</button>
+        </div>
+        <div class="jumbotron text-center">
+          <h2 class="proom">Our Worldclass Facilities</h2>
+          <p style="margin-top: 16px;"></p>
+            Make a reservation for a space and find out the rate at which our
+            Luxury suites go far. Luxury suites comes with <br />a partche, and
+            a lorraigne angular spa treatment with the right view.
+          </p>
+        </div>
+        <div>
+          <div class="img-wrap">
+            <img
+              class="services"
+              height="160"
+              src="./src/images/Squash Courts Img.png"
+              alt="Squash Courts"
+            />
+
+            <img
+              class="services"
+              height="160"
+              src="./src/images/Fitness Centre.png"
+              alt="Fitness Centre"
+            />
+
+            <img class="services" height="160" src="./src/images/Lobby.png" alt="Lobby" />
+
+            <img class="services" height="160" src="./src/images/Spa.png" alt="Spa" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial section -->
+    <div class="testimonials-wrap bg">
+      <div class="container">
+        <div class="heading-section">
+          <span class="sub-heading">Testimonials</span>
+        </div>
+        <div class="carousel-testimonial owl-carousel">
+          <div class="item">
+            <div class="testimonial-box d-flex">
+              <div
+                class="user-img"
+                style="background-image: url(https://randomuser.me/api/portraits/men/92.jpg)"
+              ></div>
+              <div class="text pl-4">
+                <p>
+                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                  aenean nam laoreet nulla.
+                </p>
+                <p class="name">Mark Huff</p>
+                <span class="position">Businesswoman</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimonial-box d-flex">
+              <div
+                class="user-img"
+                style="background-image: url(https://randomuser.me/api/portraits/men/83.jpg)"
+              ></div>
+              <div class="text pl-4">
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="name">Rodel Golez</p>
+                <span class="position">Businesswoman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-box d-flex">
+              <div
+                class="user-img"
+                style="background-image: url(https://randomuser.me/api/portraits/men/84.jpg)"
+              ></div>
+              <div class="text pl-4">
+                <p>
+                  Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <p class="name">Ken Bosh</p>
+                <span class="position">Businesswoman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="testimonial-box d-flex">
+              <div
+                class="user-img"
+                style="background-image: url(https://randomuser.me/api/portraits/men/85.jpg)"
+              ></div>
+              <div class="text pl-4">
+                <p>
+                  Suspendisse ultrices at diam lectus nullam. Nisl, sagittis
+                  viverra enim erat tortor ultricies massa turpis. Arcu pulvinar
+                  aenean nam laoreet nulla.
+                </p>
+                <p class="name">Racky Henderson</p>
+                <span class="position">Father</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Enquiries -->
+
+    <section class="enquires">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-7">
+                  <img src="./src/images/bg" alt="room">
+              </div>
+              <div class="col-md-5 info">
+                  <h1>Enquires</h1>
+                  <hr>
+                  <p>To get to know more about Neoverse, fill out the form below and someone will contact you within twenty-four hours.</p>
+
+                  <form action="">
+                      <input type="text" placeholder="Name" class="entry-input">
+                      <input type="email" placeholder="Email Address" class="entry-input">
+                      <textarea class="entry-input" cols="30" rows="10" placeholder="Message"></textarea>
+                      <a href="#" class="btn btn-outline-primary orange-border">submit</a>
+                  </form>
+              </div>
+          </div>
+          
+      </div>
+  </section>
+
+    <!-- Footer -->
+    <footer class="footer-area footer--light mt-0">
+      <div class="footer-big">
+        <!-- start .container -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-sm-6">
+              <div class="footer-widget">
+                <div class="widget-about">
+                  <img
+                    src="./src/images/Logo.png"
+                    alt="Logo"
+                    class="img-fluid"
+                    width="250px"
+                  />
+                  <p style="color: #212353;">
+                    295 rd Azikwe Drive, <br />
+                    Abuja, Nigeria.
+                  </p>
+                  <ul class="contact-details">
+                    <li>
+                      <a href="tel:234-755-345">234-755-345</a>
+                    </li>
+                    <li>
+                      <a href="mailto:support@neoverse.com"
+                        >support@neoverse.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-md-4 -->
+            <div class="col-md-2 col-sm-6">
+              <div class="footer-widget">
+                <div class="footer-menu footer-menu--1">
+                  <h4 class="footer-widget-title">About</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Rooms and Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Careers</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-md-3 -->
+            <div class="col-md-2 col-sm-6">
+              <div class="footer-widget">
+                <div class="footer-menu">
+                  <h4 class="footer-widget-title">Help</h4>
+                  <ul>
+                    <li>
+                      <a href="#">Support</a>
+                    </li>
+                    <li>
+                      <a href="#">Sign up</a>
+                    </li>
+                    <li>
+                      <a href="#">Guide</a>
+                    </li>
+                    <li>
+                      <a href="#">Reports</a>
+                    </li>
+                    <li>
+                      <a href="#">Q &amp; A</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- end /.col-lg-3 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-widget">
+                <div class="footer-menu no-padding">
+                  <h4 class="footer-widget-title">Social Medias</h4>
+                  <div class="mb-5 flex-center">
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                    <img src="./src/images/f.svg" alt="fb">
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                      <img src="./src/images/t.svg" alt="tw">
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                      <img src="./src/images/i.svg" alt="ig">
+                    </a>
+                  </div>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- Ends: .col-lg-3 -->
+          </div>
+          <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+      </div>
+      <!-- end /.footer-big -->
+      <div class="mini-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>© The Neoverse, 2020. All right reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- bootstrap js -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous">
-        </script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
     <!-- bootstrap js -->
     <!-- your own script -->
     <script src="src/index.js"></script>
     <!--  -->
-</body>
+  </body>
 </html>
