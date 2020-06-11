@@ -1,9 +1,9 @@
 # Contributors
 
-- [@elcozy](https://github.com/elcozy)
+- [@emaz](https://github.com/EmmanuelOluwafemi)
 
-- [@ifatoki](https://github.com/ifatoki)
+- [@ayotunde56](https://github.com/ayotunde56)
 
-- [@akinsikuoluwafemi](https://github.com/akinsikuoluwafemi)
+- [@aarike](https://github.com/aarike)
 
 - [@Bytes](https://github.com/annonBytes)
