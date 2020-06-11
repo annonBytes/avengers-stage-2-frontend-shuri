@@ -420,7 +420,6 @@ button {
   font-size: 40px;
   width: 25px;
   height: 25px;
-  vertical-align: 0px;
   line-height: 16px;
 }
 .carousel-testimonial .owl-nav button.owl-next.disabled,
@@ -674,5 +673,31 @@ a {
     background: #fff;
     border-radius: 20px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .footer-widget {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-fluid {
+    transform: translateX(50%);
+  }
+
+  .no-show {
+    display: none;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .listing {
+    margin-top: 300px;
+  }
+
+  .col-sm-4 {
+    margin-top: 40px;
   }
 }

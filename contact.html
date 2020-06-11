@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- font awesome -->
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
-    ></script>
-    <!-- font awesome -->
-
     <!-- boostrap -->
     <link
       rel="stylesheet"
@@ -41,88 +34,98 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="css/contact.css" />
-    <title>Contact us</title>
+    <title>Rooms & Services</title>
   </head>
   <body>
     <!-- Hero Section -->
-<div class="hero">
-    
-    <div class="container">
-      <!-- Nav bar -->
-
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="./src/images/Logo.png" width="200px" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accomodation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="rooms.html">Rooms and Rates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Contact us</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="logo"
+              src="./src/images/Logo.png"
+              width="200px"
+              alt="logo"
+            />
+          </a>
+          <button
+            onclick="myFunction()"
+            id="navbar-toggler"
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accomodation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html">Rooms and Rates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
       </nav>
 
-
       <div class="form-container">
-        <div class="form">
-            <div class="form-details">
-                <form action="">
-                <h2 class="title">CONTACT US</h2>
-                <div class="form-top">
-                    <input type="text" placeholder="Name"> <br>
-                    <input type="text" placeholder="E-mail"> <br>
-                    <input type="text" placeholder="Subject"> <br>
-                    <textarea style="margin: 0;" name="message" id="Message" cols="30" rows="10" maxlength="3000">
-                    </textarea> 
-                    <button>Send Message</button>
-                    <hr>
-                    <p>OR SPEAK TO CUSTOMER SERVICE</p>
-                    <button class="btn">LIVE CHAT</button>
-                    <div class="mb-5 flex-center socials">
-                        <!-- Facebook -->
-                        <a class="fb-ic">
-                        <img src="./src/images/f.svg" alt="fb">
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic">
-                          <img src="./src/images/t.svg" alt="tw">
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic">
-                          <img src="./src/images/i.svg" alt="ig">
-                        </a>
-                      </div>
+        <div class="form mystyle">
+          <div class="form-details">
+            <form action="">
+              <h2 class="title">CONTACT US</h2>
+              <div class="form-top">
+                <input type="text" placeholder="Name" /> <br />
+                <input type="text" placeholder="E-mail" /> <br />
+                <input type="text" placeholder="Subject" /> <br />
+                <textarea
+                  style="margin: 0;"
+                  name="message"
+                  id="Message"
+                  cols="30"
+                  rows="3"
+                  maxlength="3000"
+                >
+                </textarea>
+                <button>Send Message</button>
+                <hr />
+                <p>OR SPEAK TO CUSTOMER SERVICE</p>
+                <button class="btn">LIVE CHAT</button>
+                <div class="mb-4 flex-center socials">
+                  <!-- Facebook -->
+                  <a class="fb-ic">
+                    <img src="./src/images/f.svg" alt="fb" />
+                  </a>
+                  <!-- Twitter -->
+                  <a class="tw-ic">
+                    <img src="./src/images/t.svg" alt="tw" />
+                  </a>
+                  <!--Instagram-->
+                  <a class="ins-ic">
+                    <img src="./src/images/i.svg" alt="ig" />
+                  </a>
                 </div>
-                
-                </form>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
-      <!-- End Nav bar -->
-    </div>
+      </div>
+    </header>
 
     <!-- bootstrap js -->
-
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"
+    ></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

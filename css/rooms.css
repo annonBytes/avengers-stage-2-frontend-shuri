@@ -1,10 +1,4 @@
-nav {
-  margin-top: 0px;
-  margin-left: 15px;
-  z-index: 999;
-}
-
-.hero .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -13,59 +7,61 @@ nav {
   color: #000000;
 }
 
-.hero .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
   color: #d9b77b;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  background: #fff;
-  width: 1600px;
-  height: 64px;
-  top: 0;
-  left: 0;
-}
-
-.hero::before {
-  content: "";
-  background: url("../src/images/room.png");
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  margin: 0;
-  top: 0;
-  z-index: -1;
+header {
   max-width: 100%;
+  height: 100vh;
+  background-image: url("../src/images/room.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.card-bg {
-  margin-top: 55%;
-  margin-left: 180px;
+.card-deck {
+  margin-top: 60px;
+}
+
+.heading,
+.subheading {
+  text-align: center;
+}
+
+.subheading {
+  width: 100%;
+}
+
+.overlay-content {
+  position: absolute;
+  width: 50%;
+  height: 300px;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
   background: #fff;
   border-radius: 24px;
-  width: 672px;
-  height: 300px;
   text-align: center;
-  mix-blend-mode: normal;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 888;
+  z-index: 4;
 }
 
-.card-bg::after {
+.overlay-content::after {
   content: "";
   position: absolute;
   border: 3px solid #d9b77b;
-  width: 648px;
-  height: 280px;
-  left: 437px;
-  top: 680px;
+  width: 95%;
+  height: 95%;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 12px;
 }
 
-.card-bg h3 {
+.overlay-content h3 {
+  width: 80%;
+  text-align: center;
+  margin: 5px auto;
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -76,10 +72,13 @@ nav {
   color: #d9b77b;
 }
 
-.listing {
-  background: #f3f3f3;
-  padding: 120px;
-  z-index: 1;
+.bg-light {
+  background: transparent;
+}
+
+.section-1 {
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 .room {
@@ -296,4 +295,28 @@ a {
 
 .footer-widget a {
   color: #d9b77b;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .overlay-content h3 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .overlay-content {
+    bottom: 25%;
+    width: 70%;
+    height: 300px;
+  }
+
+  .footer-widget {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-fluid {
+    transform: translateX(50%);
+  }
 }

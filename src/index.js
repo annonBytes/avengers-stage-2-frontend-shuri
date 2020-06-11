@@ -19,3 +19,12 @@ $('.carousel-testimonial').owlCarousel({
         }
     }
 })
+
+
+function myFunction() {
+    var element = document.getElementById("navbar-toggler");
+
+    if(element.clicked === "true"){
+        element.classList.add("mystyle");
+    }     
+  }
